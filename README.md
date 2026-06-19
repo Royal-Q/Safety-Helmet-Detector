@@ -194,11 +194,11 @@ python train.py --epochs 200 \
 #### **4.8 训练效果参考**
 
 使用 SHWD 数据集（训练集 5457 张，验证集 607 张，测试集 1517 张），训练 200 轮，最终模型在测试集上的性能为：
-- **mAP@0.5**：94.7%
-- **精确率（Precision）**：93.3%
-- **召回率（Recall）**：90.5%
+- **mAP@0.5**：93.9%
+- **精确率（Precision）**：92.9%
+- **召回率（Recall）**：89.5%
 
-![训练曲线](runs\train\exp1\results.png)
+![训练曲线](runs/train/exp1/results.png)
 
 ## 5. 目录与文件说明
 
