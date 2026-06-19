@@ -1,0 +1,7 @@
+# YOLOv5 数据集配置文件
+train: D:\biyesheji\Helmet-Detection-YoloV5\helmet_yolov5\data\VOC2028\yolo_dataset\images\train
+val: D:\biyesheji\Helmet-Detection-YoloV5\helmet_yolov5\data\VOC2028\yolo_dataset\images\val
+test: D:\biyesheji\Helmet-Detection-YoloV5\helmet_yolov5\data\VOC2028\yolo_dataset\images\test
+
+nc: 2
+names: ['no_helmet', 'helmet']
