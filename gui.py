@@ -369,7 +369,6 @@ class HelmetDetectionGUI:
         return available
 
     def show_camera_selection_dialog(self, available_indices):
-        """弹出摄像头选择对话框"""
         if not available_indices:
             messagebox.showerror("错误", "未检测到任何可用的摄像头，请检查连接。")
             return None
@@ -380,8 +379,9 @@ class HelmetDetectionGUI:
         dialog.transient(self.root)
         dialog.grab_set()
         dialog.update_idletasks()
-        x = (self.root.win_screenwidth() - dialog.winfo_width()) // 2
-        y = (self.root.win_screenheight() - dialog.winfo_height()) // 2
+        # 修复此处
+        x = (self.root.winfo_screenwidth() - dialog.winfo_width()) // 2
+        y = (self.root.winfo_screenheight() - dialog.winfo_height()) // 2
         dialog.geometry(f"+{x}+{y}")
 
         tb.Label(dialog, text="请选择要使用的摄像头：", font=("微软雅黑", 10)).pack(pady=15)
